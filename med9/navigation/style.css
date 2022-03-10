@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+body {
+	margin: 0;
+}
+
+nav {
+	background-color: lightblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+
+}
+
+nav img {
+	height: 70px;
+	border-radius: 50%;
+
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type:none;
+}
+
+nav ul li a {
+	margin: 20px;
+	padding: 20px;
+	text-decoration:none;
+	background-color: whitesmoke;
+	border-radius: 15px;
+	color: darkblue;
+	font-family: League Gothic;
+}
+
+nav ul li a:hover {
+	background: linear-gradient(133deg, rgba(142,203,214,0.9612219887955182) 27%, rgba(3,2,2,0.8435749299719888) 84%);
+}
