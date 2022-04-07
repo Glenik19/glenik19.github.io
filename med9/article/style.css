@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+	margin: 0;
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: roboto;
+}
+
+
+article {
+	position: relative;
+
+
+}
+
+article .image{
+	width: 300px;
+	height: 170px;
+	background-image: url(flower.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 20px;
+}
+
+article .text {
+	width: 300px;
+	height: 170px;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+article .text .mini-header{
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+article .text .mini-header span {
+	margin-right: 10px;
+}
+
+article .text .mini-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: darkgrey;
+	font-size: 11px;
+	width: 100%;
+}
+
+article .red-box{
+	background-color: red;
+	color: whitesmoke;
+	padding: 13px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 170px;
+	left: 0;
+	font-size: 11px;
+}
