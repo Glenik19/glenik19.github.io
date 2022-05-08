@@ -1,0 +1,228 @@
+/*
+*
+*Title: Projekt 3;
+*Author: Glejdi Nika;
+*Date: 08.05.2022;
+*
+*/
+
+/************** General Styling *****************/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Lora:ital,wght@1,500&family=Merriweather:wght@700&family=Raleway:wght@500&family=Work+Sans:wght@500&display=swap');
+
+body {
+	margin: 0;
+	font-family: Merriweather;
+}
+ 
+/* Navigation */
+nav {
+	background-color:burlywood;
+	display: flex;
+	justify-content: space-between; /* To make the links on the right side and the logo  on the left*/
+	align-items: center;
+	padding: 30px;
+	position: fixed;
+	width: calc(100% - 60px) ;
+	z-index: 1;
+}
+
+a {
+	font-size: 30px;
+}
+
+nav img {
+	height: 80px;
+	border-radius: 50%; /* To make the logo round*/
+
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type:none; /* It removes the bullet points*/
+}
+
+nav ul li a {
+	margin: 20px;
+	padding: 20px;
+	text-decoration:none; /* It removes the underling*/
+	background-color: black;
+	border-radius: 15px;
+	color:whitesmoke;
+	font-family: Raleway;
+}
+
+nav ul li a:hover {
+/* Hover changes the elements if we move the mouse over it*/
+	background: linear-gradient(43deg, rgba(201,230,255,0.969625350140056) 23%, rgba(13,41,42,1) 70%);
+	color: white;
+}
+
+/*Header*/
+header {
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+	background-image: url("bild2.jpg");
+	font-family: Work Sans;
+	font-size: 100px;
+	width: 100%;
+	height: 500px;
+}
+
+header h1 {
+	font-size: 30px;
+	width: 300px;
+	text-align: center;
+}
+ 
+/*Main*/
+#shop {
+	color: white;
+	background: linear-gradient(90deg, rgba(159,176,139,1) 0%, rgba(162,128,41,1) 100%);
+	padding: 50px;
+	font-size: 22px;
+	flex-direction: column;
+}
+
+#shop p {
+	padding: 18px;
+}
+
+/*Section*/
+section {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+section .left {
+	width: 50%;
+	background-color: #c2a851;
+	color: white;
+	padding: 35px;
+}
+
+section .right {
+	font-size: 20px;
+	width: 50%;
+	background-color: #91824d;
+	color: white;
+	padding: 35px;
+}
+
+#contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	background: linear-gradient(90deg, rgba(163,199,117,1) 0%, rgba(108,89,41,1) 100%);;
+	color: white;
+	padding: 35px;
+}
+
+/*Footer*/
+footer {
+	height: 430px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url(bild3.jpg);
+	background-position: center;
+	background-size: cover;
+	font-family: Lora;
+}
+
+footer p {
+	background-color: #b5a447;
+	padding: 13px;
+	border-radius: 17px;
+	font-size: 22px;
+	color: white;
+}
+
+/*Article*/
+.clothes {
+	margin: 0;
+	background-color: #d4c572;
+}
+
+
+article {
+	position: relative;
+	margin: 30px;
+}
+
+article .image{
+	width: 300px;
+	height: 170px;
+	padding: 20px;
+	background-position: center;
+	background-size: cover;
+}
+
+article .text {
+	width: 300px;
+	height: 170px;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+article .text .mini-header{
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+article .text .mini-header span {
+	margin: 10px;
+	font-family: Inconsolata;
+}
+
+article .text .mini-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: darkgrey;
+	font-size: 11px;
+	width: 100%;
+}
+
+article .red-box {
+	background-color: red;
+	color: whitesmoke;
+	padding: 13px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 171.5px;
+	left: 0;
+	font-size: 11px;
+}
+
+/*Main*/
+main {
+	margin: 0;
+	background-color: #d4c572;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	min-height: 100vh;
+}
+
+/*Photo*/
+.shkoder {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+  	border: dashed 5px blue;
+  	border-radius: 18px;
+  	margin-bottom: 20px;
+}
