@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	background-color: rgb(0, 0, 0,0.1);
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type:none;
+}
+
+nav ul li a {
+	margin: 20px;
+	padding: 20px;
+	text-decoration:none;
+	border-radius: 15px;
+	color: darkblue;
+	
+}
+
+.architects{
+	color: gray
+
+}
+
+img{
+	width: 350px;
+	margin: 30px;
+}
+
+div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.summer{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 157px;
+	left: 30px;
+}
+
+.brick{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 157px;
+	left: 453px;
+}
+
+.revovated{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 157px;
+	left: 877px;
+}
+
+.barn{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 157px;
+	left: 1300px;
+}
+
+.summer1{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 452px;
+	left: 30px;
+}
+
+.brick1{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 452px;
+	left: 453px;
+}
+
+.revovated1{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 452px;
+	left: 877px;
+}
+
+.barn1{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 452px;
+	left: 1300px;
+}
