@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+</head>
+
+		<style type="text/css">
+			.big{
+				background-color: red;
+				height: 300px;
+				width: 300px;
+				margin-top: 200px;
+			}
+
+			.small{
+				background-color: lightblue;
+				height: 50%;
+				width: 50%;
+				animation-name: mandinishtulls;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+			}
+
+			.big:hover .small {
+				animation-play-state: paused; 
+
+			}
+				
+
+			@keyframes mandinishtulls {
+				0% {transform: translate(0);  background-color: orange;}
+				33%{transform: translateY(100%);}
+				66%{transform: translateX(100%) translateY(100%);}
+				100%{transform: translateX(100%);}
+				
+			}
+		</style>
+<body>
+	<h1>Animation</h1>. You can change an many CSS propertie
+	<p>An animation lets an element gradually change from one style to anohters you want, as many times as you want. To use CSS animation, you must first specify some keyframes the animation.</p>
+
+	<div class="big">
+		<div class="small"></div>
+
+	</div>
+
+</body>
+</html>
