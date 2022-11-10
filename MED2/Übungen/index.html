@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Übung</title>
+	<style type="text/css">
+
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+		
+		header, nav, main, aside, footer{
+			border: solid 1px;
+		}
+
+		.container{
+			display: grid;
+			height: 100vh;
+			width:100vw;
+			grid-template-columns: 20vw 1fr 20vw;
+			grid-template-rows:10vh 1fr 1fr 10vh;
+		}
+
+		header{
+			grid-column: 1/4;
+			grid-row: 1/2;	
+
+		}
+
+		nav{
+			grid-column: 1/2;
+			grid-row: 2/4;
+			
+		}
+
+		main{
+			grid-column: 2/3;
+			grid-row: 2/4;
+			
+		}
+
+		.special{
+			grid-column: 3/4;
+			grid-row: 2/3;
+		}
+
+		.sspecial{
+			grid-column: 3/4;
+			grid-row: 3/4;
+		}
+
+		footer{
+			grid-column: 1/4;
+			grid-row: 4/5;
+			
+		}
+
+		header:hover {
+			background-color: orange;
+			transition-duration: 2s;
+		}
+
+		footer:hover {
+			background-color: red;
+			transition-duration: 2s;
+		}
+
+
+
+			.small{
+				background-color: lightblue;
+				height: 50%;
+				width: 50%;
+				animation-name: mandinishtulls;
+				animation-duration: 2s;
+				animation-fill-mode: forwards;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+
+			}
+
+			 .small:hover {
+				animation-play-state: paused; 
+
+			}
+				
+
+			@keyframes mandinishtulls {
+				0% {transform: translate(0);  background-color: orange;}
+				33%{transform: translateY(78%);}
+				66%{transform: translateX(80%) translateY(90%);}
+				100%{transform: translateX(60%);}
+				
+			}
+
+			 main a:hover {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				animation-name: mandi;
+			}
+
+			@keyframes mandi {
+				0% {background-color: red;}
+				33%{background-color: orange;}
+				66%{background-color: yellow;}
+				100%{background-color: red;}
+				
+			}
+
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+	<header>header</header>
+	<nav>nav
+		<a href="#">link</a></nav>
+		
+	<main>main
+			
+		<div class="small"></div>
+			
+	</main>
+	<aside class="special">aside 1</aside>
+	<aside class="sspecial">aside 2</aside>
+	<footer>footer</footer>
+	</div>
+
+</body>
+</html>
